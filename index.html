@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    >
+    <!-- <link rel="stylesheet" href="stil/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="https://use.typekit.net/yol0fsr.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Encode+Sans+SC:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Syne+Mono&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    >
+    <title>Digital Sommelier</title>
+    <script>
+      if (sessionStorage.getItem("verfied") != "true") {
+        window.location.href = "html/ageVerify.html"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="top">
+      <header>
+        <a href="index.html"
+          ><img
+            src="/images/logo.svg"
+            alt="Logotype saying Digital Sommelier"
+          >
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="activeLink">Home</a></li>
+          <li><a href="html/sommelier.html">Sommelier</a></li>
+          <li><a href="html/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <!-- <canvas title="Animation of rotating wine bottle composed of digits " id="wineBottle"></canvas> -->
+      <div id="wineBottle"></div>
+      <div class="content">
+        <div id="intro">
+          <h1>Where Tradition Meets Innovation</h1>
+          <p>
+            Whether you're a seasoned connoisseur or a casual enthusiast, our
+            AI-driven platform is here to elevate your dining experience with
+            expertly curated wine recommendations tailored to every meal.
+          </p>
+          <button onclick="window.location.href = 'html/sommelier.html';">
+            Try it →
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+
+        <div class="card">
+          <p>
+            Pairing wine to food comes down to basic chemestry. There are some
+            comon rules to the art of wine pairing where for example the wine
+            should be more acidic than the food and sweeter than the food, but
+            have the same flavor intensity. The AI used is trained on the common
+            ground of wine pairing. While it has not been able to actually taste
+            the wines it self it provides you with the state of the art
+            suggestions to the flavour compounds of your own crafted dish.
+            <br><br>
+            Want to know more about wine pairing and how the AI utilizes this
+            knowledge? Go to the <a href="html/about.html">About page.</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Digital Sommelier 2024, Where tradition meets innovation</p>
+      <p>All rights reserved ©</p>
+      <p>
+        Website by
+        <a href="https://www.aliciaholmqvist.com/">Alicia Holmqvist</a>
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/effects/AsciiEffect.js"></script>
+    <script src="./js/winebottleanimation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    >
+    <!-- <link rel="stylesheet" href="stil/normalize.css"> -->
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="https://use.typekit.net/yol0fsr.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Encode+Sans+SC:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Syne+Mono&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    >
+    <title>Digital Sommelier</title>
+    <script>
+      if (sessionStorage.getItem("verfied") != "true") {
+       window.location.href = "./ageVerify.html"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="top">
+      <header >
+        <a href="../index.html"><img src="/images/logo.svg" alt="Logotype saying Digital Sommelier" >
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="sommelier.html">Sommelier</a></li>
+          <li><a href="about.html" class="activeLink" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <h1>How to pair wine and food</h1>
+      <div class="content_abo">
+        <div>
+
+            <p>
+              Pairing wine with food enhances the dining experience by balancing
+              flavors and highlighting the best qualities of both the wine and
+              the dish. To start, consider the weight and intensity of the food;
+              light dishes like salads and seafood pair well with light wines
+              such as a crisp Sauvignon Blanc or a refreshing Pinot Grigio.
+              Richer dishes, like steak or lamb, complement fuller-bodied wines
+              such as a Cabernet Sauvignon or a Syrah. <br><br>
+
+              Another key factor is acidity; pairing acidic wines with acidic
+              dishes creates harmony. For instance, a high-acid wine like a
+              Chianti pairs beautifully with tomato-based sauces. Sweet wines,
+              like Riesling or Moscato, can contrast with spicy foods to provide
+              balance and cool the palate. <br><br>
+
+              When pairing wine with salty foods, choose wines with a touch of
+              sweetness or a sparkling wine to enhance flavors. For creamy
+              dishes, opt for wines with good acidity, like Chardonnay, to cut
+              through the richness. <br><br>
+
+              Matching regional cuisines with wines from the same area can also
+              create a natural pairing. Ultimately, trust your palate and
+              experiment to find combinations that delight your senses, as
+              personal preference plays a significant role in pairing wine with
+              food.
+            </p>
+          </div>
+          <div class="right_box">
+            <table id="bigtable">
+              <thead>
+                <tr>
+                  <th>Grape</th>
+                  <th>Cheese</th>
+                  <th>Meats</th>
+                  <th>Seafood</th>
+                  <th>Veggies</th>
+                  <th>Herbs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="white_wine"><strong>Sauvingnon Blanc</strong></td>
+                  <td>Feta<br>Chévre</td>
+                  <td>Chicken<br>Turkey</td>
+                  <td>Oysters<br>Scallops</td>
+                  <td>Citrus<br>Asparagud<br>Apple</td>
+                  <td>Chives<br>Cilantro</td>
+                </tr>
+                <tr>
+                  <td class="white_wine"><strong>Chardonnay</strong></td>
+                  <td>Asaigo<br>Havarti</td>
+                  <td>Veal<br>Chicken<br>Pork Loin</td>
+                  <td>Shrimp<br>Crab</td>
+                  <td>Potato<br>Squash<br>Mango</td>
+                  <td>Sesabe<br>Basil</td>
+                </tr>
+                <tr>
+                  <td class="white_wine"><strong>Riesling</strong></td>
+                  <td>Gouda <br>Havarti</td>
+                  <td>Smoked saussage <br>Duck</td>
+                  <td>Sea brass <br>Trout</td>
+                  <td>Apricots <br>Pear <br>Chilli</td>
+                  <td>Rosemary <br>Ginger</td>
+                </tr>
+                <tr>
+                  <td class="red_wine"><Strong>Pinot Noir</Strong></td>
+                  <td>Chévre <br>Brie</td>
+                  <td>Lamb <br>Sausage</td>
+                  <td>Tuna</td>
+                  <td>Mushroom <br>Dried Fruit</td>
+                  <td>Nutmeg <br>Cinamon <br>Clove</td>
+                </tr>
+                <tr>
+                  <td class="red_wine"><Strong>Merlot</Strong></td>
+                  <td>Parmigiano</td>
+                  <td>Grilled meats</td>
+                  <td>Grilled swordfish</td>
+                  <td>Caremelized onions <br>Tomato <br>Plums</td>
+                  <td>Rosemary <br>Mint</td>
+                </tr>
+                <tr>
+                  <td class="red_wine"><Strong>Cabernet Sauvignon</Strong></td>
+                  <td>Cheddar <br>Gorgonzola</td>
+                  <td>Beef stew <br>Ribeye</td>
+                  <td>Grilled tuna</td>
+                  <td>Black cherries <br>Broccoli <br>Tomato</td>
+                  <td>Rosemary <br>Lavender</td>
+                </tr>
+              </tbody>
+            </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="white_wine" colspan="2">Sauvignon Blanc</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Feta, Chévre</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Chicken, Turkey</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Oysters, Scallops</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Citrus, Asparagus, Apple</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Chives, Cilantro</td>
+                </tr>
+              </tbody>
+
+          </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="white_wine" colspan="2">Chardonnay</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Asagio, Havarti</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Veal, Chicken, Pork Loin</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Shrimp, Crab</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Potato, Squash, Mango</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Sesame, Basil</td>
+                </tr>
+              </tbody>
+
+          </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="white_wine" colspan="2">Riesling</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Gouda, Havarti</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Smoked Sausage, Duck</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Sea Brass, Trout</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Apricots, Pear, Chilli</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Rosemary, Chilli</td>
+                </tr>
+              </tbody>
+
+          </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="red_wine" colspan="2">Pinot Noir</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Chévre, Brie</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Lamb, Sausage</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Tuna</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Mushroom, Dried Fruit</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Nutmeg, Cinamon, Clove</td>
+                </tr>
+              </tbody>
+
+          </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="red_wine" colspan="2">Merlot</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Parmigiano</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Grilled Meats</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Grilled Swordfish</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Caremelized Onions, Tomato, Plums</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Rosemary, Mint</td>
+                </tr>
+              </tbody>
+          </table>
+
+          <table class="smalltable">
+            <thead>
+              <tr>
+                <th class="red_wine" colspan="2">Cabernet Sauvignon</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="subject">Cheese</td>
+                  <td>Cheddar, Gorgonzola</td>
+                </tr>
+                <tr>
+                  <td class="subject">Meats</td>
+                  <td>Beef Stew, Ribeye</td>
+                </tr>
+                <tr>
+                  <td class="subject">Seafood</td>
+                  <td>Grilled Tuna</td>
+                </tr>
+                <tr>
+                  <td class="subject">Veggies</td>
+                  <td>Black Cherries, Broccoli, Tomato</td>
+                </tr>
+                <tr>
+                  <td class="subject">Herbs</td>
+                  <td>Rosemary, Lavender</td>
+                </tr>
+              </tbody>
+          </table>
+                
+
+          </div>
+      </div>
+    </main>
+    <footer>
+      <p>Digital Sommelier 2024, Where tradition meets innovation</p>
+      <p>All rights reserved ©</p>
+      <p>
+        Website by
+        <a href="https://www.aliciaholmqvist.com/">Alicia Holmqvist</a>
+      </p>
+    </footer>
+  </body>
+</html>

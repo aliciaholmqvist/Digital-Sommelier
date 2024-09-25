@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    >
+    <!-- <link rel="stylesheet" href="stil/normalize.css"> -->
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="https://use.typekit.net/yol0fsr.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Encode+Sans+SC:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Syne+Mono&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    >
+    <title>Digital Sommelier</title>
+    <script>
+      if (sessionStorage.getItem("verfied") && sessionStorage.getItem("verfied") === "true" ) {
+        window.location.href = "../index.html"
+      }
+    </script>
+  </head>
+  <body class="verify-body">
+    <main class="verify-main">
+        <h1>Age Verification</h1> 
+        <p>This website contains information about alcoholic beverages. <br> 
+            To visit this website, you must therefore be 20 years of age or older.</p>
+        <p>Are you over 20 years old? </p>
+        <div class="verify-buttons">
+            <button class="secondary" onclick='sessionStorage.setItem("verfied", "true"); window.location.href = "../index.html"';>Yes</button>
+            <button class="primary" onclick="window.location.href = 'accessDenied.html';">No</button>
+        </div>
+    </main>
+  </body>
+</html>

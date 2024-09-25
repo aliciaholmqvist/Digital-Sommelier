@@ -1,0 +1,524 @@
+:root {
+    --background: #290e3a;
+    --onsurface: rgb(255, 255, 255, 0.1);
+    --textcolor: #f6ebdf;
+    --primary: #d83654;
+    --primary-light: #FF617E;
+    --primary-dark: #C92644;
+    --deselected: rgb(246, 235, 223, 0.5);
+    --button-deselected: #FFDBE2;
+    --white: #fff;
+}
+
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+/* Generella regler*/
+p,
+li a {
+    color: var(--textcolor);
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    color: var(--primary-light);
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--textcolor);
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+}
+
+#top {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3rem 0rem 3rem;
+    background-color: var(--background);
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+nav li {
+    padding: 0.5rem;
+    color: var(--textcolor);
+}
+
+nav li a {
+    font-size: large;
+}
+
+.activeLink {
+    color: var(--primary-light);
+    font-weight: bolder;
+}
+
+nav li a:hover {
+    transition: 0.3s;
+    color: var(--primary-light);
+}
+
+nav li a:after {
+    transition: 0.3s;
+    color: var(--primary-light);
+}
+
+main {
+    padding: 3rem 5rem 5rem 5rem;
+    background-color: var(--background);
+    position: relative;
+    height: max-content;
+}
+
+.verify-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin:0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    /* Reset CSS code */
+    -webkit-appearance: none;
+    appearance: inherit;
+    box-shadow: none;
+    border: none;
+
+    width: 10rem;
+    background-color: var(--primary);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 16px;
+}
+
+.secondary{
+    background-color: var(--button-deselected);
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.disabled{
+    background-color: var(--deselected);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    /* Reset default style */
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 100%;
+    background-color: var(--onsurface);
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--textcolor);
+    border-radius: 16px;
+    border-color: var(--deselected);
+    border: 1px solid var(--onsurface);
+}
+
+::placeholder {
+    color: var(--deselected);
+}
+
+output {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--deselected);
+    display: block;
+}
+
+.bright_text{
+    color: var(--textcolor);
+}
+
+
+
+label {
+    color: var(--textcolor);
+    font-size: 16px;
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5rem;
+}
+
+table {
+    color: var(--textcolor);
+    font-size: 12px;
+    font-family: "source-sans-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--onsurface);
+    font-size: 1em;
+}
+
+td,
+th,
+tr {
+    padding: 0.6em;
+    border: 1px solid;
+    border-color: var(--onsurface);
+}
+
+.red_wine {
+    color: var(--primary-light);
+}
+
+.white_wine {
+    color: white;
+}
+
+.content {
+    gap: 2rem;
+    margin-right: 35vw;
+}
+
+.card {
+    background-color: var(--onsurface);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: inline-block;
+    position: relative;
+    min-height: 150px;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--textcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: var(--background);
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary-dark);
+}
+
+/* Specific */
+.verify-body{
+    display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.verify-buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.verify-buttons button{
+    width: 5rem;
+}
+.content_som {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.content_som > * {
+    flex: 1;
+}
+
+.content_abo {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.content_abo > * {
+    flex: 1 1;
+}
+
+.left_box {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.left_box::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1.5px;
+    background-color: var(--onsurface);
+    top: 0;
+    right: -1.5rem;
+}
+
+#intro {
+    margin: 20% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#wineBottle {
+    width: 25vw;
+    height: 40vw;
+    position: sticky;
+    top: 4rem;
+    right: 8vw;
+    float: right;
+}
+
+#loader{
+display: none;
+}
+
+#loader.show{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7rem;
+    width: 7rem;
+}
+
+path{
+    fill: var(--primary);
+}
+
+.hide{
+    display: none;
+}
+
+/* Breakpoints*/
+/*Mobil*/
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    button {
+        width: 12rem;
+    }
+
+    .content {
+        margin-right: 0;
+    }
+
+    .content_som {
+        flex-direction: column;
+    }
+
+    .content_abo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wineBottle-container {
+        display: none;
+    }
+
+    #top {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        position: static;
+    }
+
+    #intro {
+        align-items: center;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    header,
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    .right_box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #bigtable {
+        display: none;
+    }
+    .red_wine {
+        background-color: var(--primary-light);
+        color: var(--background);
+    }
+
+    .white_wine {
+        background-color: white;
+        color: var(--background);
+    }
+
+    .subject {
+        background-color: var(--onsurface);
+        width: 10%;
+    }
+
+    td {
+        padding: 0.8em;
+    }
+
+    .left_box::before {
+        display: none;
+    }
+
+    .left_box::after {
+        position: absolute;
+        content: "";
+        background-color: var(--onsurface);
+        height: 1.5px;
+        width: 100%;
+        bottom: -1.5rem;
+        left: 0;
+    }
+}
+
+/* Breakpoints*/
+/*Tablet*/
+
+@media (min-width: 651px) and (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .content_abo,
+    .content_som {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right_box div {
+        width: 100%;
+    }
+    .smalltable {
+        display: none;
+    }
+    #bigtable {
+        display: contents;
+    }
+
+    .left_box::before {
+        display: none;
+    }
+
+    .left_box::after {
+        position: absolute;
+        content: "";
+        background-color: var(--onsurface);
+        height: 1.5px;
+        width: 100%;
+        bottom: -1.5rem;
+        left: 0;
+    }
+}
+
+/* Breakpoints*/
+/*Laptop*/
+
+@media (min-width: 901px) {
+    .smalltable {
+        display: none;
+    }
+    #bigtable {
+        display: contents;
+    }
+}
