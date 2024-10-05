@@ -132,6 +132,10 @@ button {
     border-radius: 16px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .secondary{
     background-color: var(--button-deselected);
     color: var(--primary-dark);
@@ -337,6 +341,7 @@ footer a {
 }
 
 #wineBottle {
+    display: block;
     width: 25vw;
     height: 40vw;
     position: sticky;
@@ -397,7 +402,7 @@ path{
         align-items: center;
     }
 
-    #wineBottle-container {
+    #wineBottle {
         display: none;
     }
 
@@ -509,6 +514,10 @@ path{
         bottom: -1.5rem;
         left: 0;
     }
+/* 
+    #wineBottle{
+        display: contents;
+    } */
 }
 
 /* Breakpoints*/
@@ -521,4 +530,8 @@ path{
     #bigtable {
         display: contents;
     }
+
+    /* #wineBottle{
+        display: contents;
+    } */
 }

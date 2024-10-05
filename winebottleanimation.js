@@ -128,24 +128,23 @@ document.addEventListener("DOMContentLoaded", function () {
   function animate() {
     requestAnimationFrame(animate);
 
-    if (canvas.clientHeight > 0 && canvas.clientWidth > 0) {
-      // Update lighting positions
-      const radius = 5;
-      const lightSpeed = 0.001;
-      const timeOffset = 2.5;
-      const time = Date.now() * lightSpeed;
+    // Update lighting positions
+    const radius = 5;
+    const lightSpeed = 0.001;
+    const timeOffset = 2.5;
+    const time = Date.now() * lightSpeed;
 
-      directionalLight.position.x = Math.cos(time) * radius;
-      directionalLight.position.z = Math.sin(time) * radius;
+    directionalLight.position.x = Math.cos(time) * radius;
+    directionalLight.position.z = Math.sin(time) * radius;
 
-      directionalLight2.position.x = Math.cos(time + timeOffset) * radius;
-      directionalLight2.position.z = Math.sin(time + timeOffset) * radius;
+    directionalLight2.position.x = Math.cos(time + timeOffset) * radius;
+    directionalLight2.position.z = Math.sin(time + timeOffset) * radius;
 
-      // Render the scene using the ASCII effect
-      effect.render(scene, camera);
-      // Ensure the canvas frame is rendered at each frame
-      updateCanvasFrameSize();
-    }
+    // Render the scene using the ASCII effect
+    effect.render(scene, camera);
+
+    // Ensure the canvas frame is rendered at each frame
+    updateCanvasFrameSize();
   }
 
   animate();
