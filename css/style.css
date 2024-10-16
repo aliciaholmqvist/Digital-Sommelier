@@ -514,10 +514,6 @@ path{
         bottom: -1.5rem;
         left: 0;
     }
-/* 
-    #wineBottle{
-        display: contents;
-    } */
 }
 
 /* Breakpoints*/
@@ -530,8 +526,4 @@ path{
     #bigtable {
         display: contents;
     }
-
-    /* #wineBottle{
-        display: contents;
-    } */
 }
